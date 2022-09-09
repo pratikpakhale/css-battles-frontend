@@ -81,6 +81,15 @@ function EditBattle() {
   }
 
   const deleteHandler = async () => {
+    const confirm = window.prompt(
+      'Are you sure you want to delete this battle? This action cannot be undone. Please type "CONFIRM" to delete '
+    )
+
+    if (confirm !== 'CONFIRM') {
+      window.alert('Delete cancelled')
+      return
+    }
+
     try {
       const responseData = await sendRequest(
         '/battles/' + battleId,

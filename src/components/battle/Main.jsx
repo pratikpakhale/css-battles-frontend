@@ -32,9 +32,15 @@ function Main() {
 
   return (
     <div className='flex'>
-      <Code updateCode={setCode} />
-      <Output code={code} battle={battle} />
-      <Target battle={battle} />
+      {battle ? (
+        <>
+          <Code updateCode={setCode} />
+          <Output code={code} battle={battle} />
+          <Target battle={battle} />
+        </>
+      ) : (
+        <div className='text-white p-20'>Loading Battle...</div>
+      )}
     </div>
   )
 }

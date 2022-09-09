@@ -15,7 +15,7 @@ function Target({ battle }) {
 
   return (
     <aside
-      className='min-w-min px-4 overflow-x-auto flex-shrink-0'
+      className='min-w-fit inline-block px-4 overflow-x-auto flex-shrink-0'
       aria-label='Sidebar'
     >
       <div className='overflow-auto bg-css-secondary rounded p-4'>

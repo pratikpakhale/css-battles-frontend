@@ -16,9 +16,6 @@ function Code({ updateCode }) {
   <!-- OBJECTIVE -->
   <!-- Write HTML/CSS in this editor and replicate the given target image in the least code possible. What you write here, renders as it is -->
   
-  <!-- SCORING -->
-  <!-- The score is calculated based on the number of characters you use (this comment included :P) and how close you replicate the image. Read the FAQS (https://cssbattle.dev/faqs) for more info. -->
-  
   <!-- IMPORTANT: remove the comments before submitting -->
   `
   )
@@ -34,7 +31,7 @@ function Code({ updateCode }) {
 
   return (
     <aside
-      className=' inline-block w-5/12 h-screen border-r-ccss border-tertiary'
+      className='overflow-y-auto w-5/12 h-screen border-r-ccss border-tertiary'
       aria-label='Sidebar'
     >
       <div className='overflow-y-auto bg-css-secondary rounded p-4'>
