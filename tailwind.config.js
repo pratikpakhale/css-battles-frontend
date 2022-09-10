@@ -20,6 +20,7 @@ module.exports = {
       spacing: {
         300: '300px',
         400: '400px',
+        550: '550px',
       },
       fontWeight: {
         regular: '200',
@@ -27,5 +28,8 @@ module.exports = {
       },
     },
   },
-  plugins: [require('@shrutibalasa/tailwind-grid-auto-fit')],
+  plugins: [
+    require('@shrutibalasa/tailwind-grid-auto-fit'),
+    require('tailwind-scrollbar')({ nocompatible: true }),
+  ],
 }

@@ -31,30 +31,29 @@ function Code({ updateCode }) {
 
   return (
     <aside
-      className='overflow-y-auto w-5/12 h-screen border-r-ccss border-tertiary'
+      className='w-5/12 h-screen border-r-ccss border-tertiary'
       aria-label='Sidebar'
     >
       <div className='overflow-y-auto bg-css-secondary rounded p-4'>
-        <div className='text-white font-poppins mb-3 text-lg'>CODE EDITOR</div>
-
-        <CodeEditor
-          value={code}
-          language='html'
-          placeholder='Please enter HTML code here.'
-          onChange={evn => handleChange(evn.target.value)}
-          padding={15}
-          wrap={'wrap'}
-          style={{
-            fontSize: 15,
-            fontFamily: 'IBM Plex Mono, monospace',
-            lineHeight: 1.5,
-            letterSpacing: '0.1em',
-            color: '#fff',
-            width: '100%',
-            height: '550px',
-            overflowY: 'scroll',
-          }}
-        />
+        <div className='text-white font-poppins mb-3 text-lg '>CODE EDITOR</div>
+        <div className='min-h-500 max-h-550 overflow-y-auto scrollbar-thin scrollbar-thumb-primary scrollbar-track-tertiary scrollbar-thumb-rounded-lg'>
+          <CodeEditor
+            value={code}
+            language='html'
+            placeholder='Please enter HTML code here.'
+            onChange={evn => handleChange(evn.target.value)}
+            padding={15}
+            wrap={'wrap'}
+            style={{
+              fontSize: 15,
+              fontFamily: 'IBM Plex Mono, monospace',
+              lineHeight: 1.5,
+              letterSpacing: '0.1em',
+              color: '#fff',
+              width: '100%',
+            }}
+          />
+        </div>
       </div>
     </aside>
   )
